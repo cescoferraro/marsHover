@@ -1,0 +1,18 @@
+apply plugin: 'java'
+apply plugin: 'application'
+
+mainClassName = "main.java.Test"
+
+applicationDefaultJvmArgs = ["-ea"]
+
+run{
+ standardInput = System.in
+}
+
+sourceSets {
+    main {
+        java {
+            srcDirs 'src'
+        }
+    }
+ }
